@@ -43,17 +43,16 @@ public class NumbersActivity extends AppCompatActivity {
         words.add("ten") ;
         //find the root view
         LinearLayout rootview = (LinearLayout)findViewById(R.id.rootview);
-        //create a variable for index
-        int index = 0;
-        //make a loop for all list
-        while (index<10){
+        //create for loop to add TextViews to the screen for each word in the list view
+        for (int index = 0;index < words.size(); index++) {
             //create new text view
-            TextView wordview = new TextView (this);
+            TextView wordview = new TextView(this);
             //set the text view to be  word at the current index
             wordview.setText(words.get(index));
             //add text view to the root view
             rootview.addView(wordview);
-            index++;
+        }
+
         }
     }
-}
+
