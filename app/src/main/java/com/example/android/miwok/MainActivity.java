@@ -18,6 +18,7 @@ package com.example.android.miwok;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(numbersIntent);
             }
         });
+
 
         // Find the View that shows the family category
         TextView family = (TextView) findViewById(R.id.family);
@@ -96,3 +98,4 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
+
