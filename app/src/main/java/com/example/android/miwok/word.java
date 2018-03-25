@@ -6,7 +6,6 @@ package com.example.android.miwok;
 
 public class word {
 
-
     /**
      * Default translation for the word
      */
