@@ -29,6 +29,13 @@ public class word {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
     }
+    /**
+     * +     * Get the Miwok translation of the word.
+     * +
+     */
+    public String getMiwokTranslation() {
+        return mMiwokTranslation;
+    }
 
     /**
      * +     * Get the default translation of the word.
@@ -38,11 +45,5 @@ public class word {
         return mDefaultTranslation;
     }
 
-    /**
-     * +     * Get the Miwok translation of the word.
-     * +
-     */
-    public String getMiwokTranslation() {
-        return mMiwokTranslation;
-    }
+
 }
