@@ -32,7 +32,7 @@ public class word {
         mMiwokTranslation = miwokTranslation;
     }
 
-    public word(String defaultTranslation, String miwokTranslation, int mImageResourceId) {
+    public word(String defaultTranslation, String miwokTranslation, int imageResourceId) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
         mImageResourceId = imageResourceId;
