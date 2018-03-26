@@ -27,22 +27,22 @@ public class NumbersActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
-       // Create a list of words
+        // Create a list of words
         ArrayList<word> words = new ArrayList<word>();
-        words.add(new word("one", "lutti",));
-        words.add(new word("two", "otiiko"));
-        words.add(new word("three", "tolookosu"));
-        words.add(new word("four", "oyyisa"));
-        words.add(new word("five", "massokka"));
-        words.add(new word("six", "temmokka"));
-        words.add(new word("seven", "kenekaku"));
-        words.add(new word("eight", "kawinta"));
-        words.add(new word("nine", "wo’e"));
-        words.add(new word("ten", "na’aacha"));
+        words.add(new word("one", "lutti", R.drawable.number_one));
+        words.add(new word("two", "otiiko", R.drawable.number_two));
+        words.add(new word("three", "tolookosu", R.drawable.number_three));
+        words.add(new word("four", "oyyisa", R.drawable.number_four));
+        words.add(new word("five", "massokka", R.drawable.number_five));
+        words.add(new word("six", "temmokka", R.drawable.number_six));
+        words.add(new word("seven", "kenekaku", R.drawable.number_seven));
+        words.add(new word("eight", "kawinta", R.drawable.number_eight));
+        words.add(new word("nine", "wo’e", R.drawable.number_nine));
+        ;
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
-        WordAdapter adapter = new WordAdapter(this,words);
+        WordAdapter adapter = new WordAdapter(this, words);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
@@ -53,6 +53,6 @@ public class NumbersActivity extends AppCompatActivity {
         // {@link ListView} will display list items for each {@link Word} in the list.
         listView.setAdapter(adapter);
     }
-        }
+}
 
 

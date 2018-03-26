@@ -25,16 +25,19 @@ public class word {
      * +     * @param defaultTranslation is the word in a language that the user is already familiar with
      * +     *                           (such as English)
      * +     * @param miwokTranslation is the word in the Miwok language
-     * +
+     * +     * @param mImageResourceId is the drawable resource id for the image
      */
     public word(String defaultTranslation, String miwokTranslation) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
     }
-    public word(String defaultTranslation, String miwokTranslation,int mImageResourceId) {
+
+    public word(String defaultTranslation, String miwokTranslation, int mImageResourceId) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
+        mImageResourceId = imageResourceId;
     }
+
     /**
      * +     * Get the Miwok translation of the word.
      * +
