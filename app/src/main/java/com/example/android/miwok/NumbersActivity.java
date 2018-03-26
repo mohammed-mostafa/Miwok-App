@@ -29,7 +29,7 @@ public class NumbersActivity extends AppCompatActivity {
         setContentView(R.layout.word_list);
        // Create a list of words
         ArrayList<word> words = new ArrayList<word>();
-        words.add(new word("one", "lutti"));
+        words.add(new word("one", "lutti",));
         words.add(new word("two", "otiiko"));
         words.add(new word("three", "tolookosu"));
         words.add(new word("four", "oyyisa"));
