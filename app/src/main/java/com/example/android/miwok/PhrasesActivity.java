@@ -30,19 +30,19 @@ public class PhrasesActivity extends AppCompatActivity {
         // Create a list of words
         ArrayList<word> words = new ArrayList<word>();
         words.add(new word("Where are you going?", "minto wuksus"));
-                words.add(new word("What is your name?", "tinnә oyaase'nә"));
-                words.add(new word("My name is...", "oyaaset..."));
-                words.add(new word("How are you feeling?", "michәksәs?"));
-                words.add(new word("I’m feeling good.", "kuchi achit"));
-                words.add(new word("Are you coming?", "әәnәs'aa?"));
-                words.add(new word("Yes, I’m coming.", "hәә’ әәnәm"));
-                words.add(new word("I’m coming.", "әәnәm"));
-                words.add(new word("Let’s go.", "yoowutis"));
-                words.add(new word("Come here.", "әnni'nem"));
+        words.add(new word("What is your name?", "tinnә oyaase'nә"));
+        words.add(new word("My name is...", "oyaaset..."));
+        words.add(new word("How are you feeling?", "michәksәs?"));
+        words.add(new word("I’m feeling good.", "kuchi achit"));
+        words.add(new word("Are you coming?", "әәnәs'aa?"));
+        words.add(new word("Yes, I’m coming.", "hәә’ әәnәm"));
+        words.add(new word("I’m coming.", "әәnәm"));
+        words.add(new word("Let’s go.", "yoowutis"));
+        words.add(new word("Come here.", "әnni'nem"));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
-        WordAdapter adapter = new WordAdapter(this,words);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_phrases);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
@@ -53,5 +53,5 @@ public class PhrasesActivity extends AppCompatActivity {
         // {@link ListView} will display list items for each {@link Word} in the list.
         listView.setAdapter(adapter);
     }
-    }
+}
 
